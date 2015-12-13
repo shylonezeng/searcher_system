@@ -33,7 +33,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="template/search_div.jsp"  %>
+	<form action="test.action">
+		<input type="text" name="username" >
+		<input type="submit" name="Submit" >
+	</form>
+
+	<button id="sendMessage_but">点击发送理财经理名片到您手机</button>
+	<a href="<s:url action="sendMessage.action"/>">点击发送信息</a>
 </body>
 
 </html>
