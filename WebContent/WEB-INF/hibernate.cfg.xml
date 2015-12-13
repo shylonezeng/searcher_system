@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+    
+    	<property name="connection.url">jdbc:mysql://112.65.239.89:3306/hbj_2012_db?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="connection.username">hbj_2012_writer</property>
+        <property name="connection.password">writer_2012_hbj</property>
+        
+        <property name="hibernate.show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+    	<property name="connection.autocommit">true </property>
+        <property name="connection.autoReconnect">true</property> 
+        <property name="connection.autoReconnectForPools">true</property> 
+        <property name="connection.is-connection-validation-required">true</property> 
+    
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="myeclipse.connection.profile">mysql</property>
+        
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>       
+        <property name="hibernate.connection.provider_class"> org.hibernate.connection.C3P0ConnectionProvider </property>
+        <property name="hibernate.c3p0.max_size">50</property>
+        <property name="hibernate.c3p0.min_size">10</property>
+        <property name="hibernate.c3p0.timeout">90</property>
+        <property name="hibernate.c3p0.idle_test_period">100</property>
+    	<property name="hibernate.c3p0.idleConnectionTestPeriod">18000</property>
+    	<property name="hibernate.c3p0.maxIdleTime">25000</property>
+    	<property name="hibernate.c3p0.idleConnectionTestPeriod">28000</property>
+    	<property name="hibernate.c3p0.validate">true</property>
+    	<property name="hibernate.c3p0.testConnectionOnCheckOut">true</property>
+    	
+    <!--
+    <mapping resource="cn/edu/sjtu/bms/hibernate/model/people/customer/Customer.hbm.xml"/>
+	-->
+    </session-factory>
+</hibernate-configuration>

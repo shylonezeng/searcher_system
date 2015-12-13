@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<phone>
+		<name><s:property value="name"/></name>
+		<passwd><s:property value="passwd"/></passwd>
+</phone>

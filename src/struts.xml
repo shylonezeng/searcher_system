@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//En"
+	"../dtds/struts-2.0.dtd">
+	
+<struts>
+	<include file="struts-default.xml"/>
+	
+	<package name="test_pak" extends="struts-default">
+    	<action name="test" class="TestAction">
+    		<result name="welcome">welcome.jsp</result>
+    	</action>
+	</package>
+	<package name="sendMessage_pak" extends="struts-default">
+		<action name="sendMessage" class="SendMessageAction" method="returnJson"></action> 
+		<!--class="SendMessageAction">
+			<result>successSent.jsp</result>  
+		</action>
+		 -->    
+	</package>
+</struts>
